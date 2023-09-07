@@ -1,0 +1,33 @@
+---
+import Container from "../Container.astro";
+import Button from "@/components/Button";
+---
+
+<Container>
+  <section class="flex flex-col items-center gap-8 mt-32 mx-auto">
+    <h1 class="text-5xl text-primary leading-tight">
+      The best way to plan your projects
+    </h1>
+    <p class="text-lg text-colorText text-opacity-80">
+      A simple visual planner that intuitively allows you and your
+      team to be more efficient.
+    </p>
+    <div class="flex items-center gap-8 w-2/4">
+      <a href={"/"} class="flex-1">
+        <Button variant={"secondary"}>How it works</Button>
+      </a>
+      <a href={"/"} class="flex-1">
+        <Button>Get started</Button>
+      </a>
+    </div>
+  </section>
+</Container>
+
+<Container>
+  <img
+    src="/images/home.webp"
+    alt="Main image kanban page"
+    width="1200"
+    height="800"
+  />
+</Container>
