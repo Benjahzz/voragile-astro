@@ -1,0 +1,59 @@
+---
+import Container from "../Container.astro";
+import PricingCard from "../PricingCard.astro";
+import type { Pricing } from "../../types";
+
+const pricings: Pricing[] = [
+  {
+    title: "Free",
+    price: 0,
+    description: "Start your business journey with us, free forever.",
+    features: [
+      "1 User",
+      "Unlimited Projects",
+      "2GB Storage",
+      "Email Support",
+      "Help Center Access",
+    ],
+    btnText: "Get Started",
+  },
+  {
+    title: "Popular",
+    price: 99,
+    description: "Start your business journey with us, free forever.",
+    features: [
+      "1 User",
+      "Unlimited Projects",
+      "2GB Storage",
+      "Email Support",
+      "Help Center Access",
+    ],
+    btnText: "Get Started",
+    isFeatured: true,
+  },
+  {
+    title: "Enterprise",
+    price: 299,
+    description: "Start your business journey with us, free forever.",
+    features: [
+      "1 User",
+      "Unlimited Projects",
+      "2GB Storage",
+      "Email Support",
+      "Help Center Access",
+    ],
+    btnText: "Get Started",
+  },
+];
+---
+
+<Container>
+  <h2 class="text-4xl">Simple Pricing for your Team</h2>
+  <p class="text-lg text-opacity-80 mt-4">
+    Designed for every stage of your journey. Start today, no credit
+    card is required.
+  </p>
+  <div class="grid grid-cols-3 gap-8 w-full mt-20">
+    {pricings.map((pricing) => <PricingCard pricing={pricing} />)}
+  </div>
+</Container>

@@ -1,23 +1,20 @@
 ---
 import Container from "../Container.astro";
-import Board from "../board/Board.tsx"
+import Board from "../board/Board.tsx";
 ---
 
 <Container>
-    <div class="w-full xl:w-9/12 flex flex-col gap-12">
-      <div>
-        <h2 class="text-white text-4xl text-center">
-          Simply drag and drop
-        </h2>
-        <p
-          class="text-white text-opacity-80 text-lg text-center mt-4"
-        >
-          Con nuestro servicio de Kanban, mover tareas es tan
-          fácil como arrastrar y soltar. Simplifica la gestión de
-          proyectos y mejora la colaboración de tu equipo en un
-          instante.
-        </p>
-      </div>
-      <Board client:load />
+  <section class="w-full xl:w-9/12 flex flex-col gap-12">
+    <div>
+      <h2 class="text-white text-4xl text-center">
+        Simply drag and drop
+      </h2>
+      <p class="text-white text-opacity-80 text-lg text-center mt-4">
+        Con nuestro servicio de Kanban, mover tareas es tan fácil como
+        arrastrar y soltar. Simplifica la gestión de proyectos y
+        mejora la colaboración de tu equipo en un instante.
+      </p>
     </div>
-  </Container>
+    <Board client:load />
+  </section>
+</Container>

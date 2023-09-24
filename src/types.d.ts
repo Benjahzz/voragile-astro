@@ -5,3 +5,12 @@ export type  Task = {
     bgColor?: string;
     textColor?: string;
 }
+
+export type Pricing = {
+    title: string;
+    price: number;
+    description: string;
+    features: string[];
+    btnText: string;
+    isFeatured?: boolean;
+}
